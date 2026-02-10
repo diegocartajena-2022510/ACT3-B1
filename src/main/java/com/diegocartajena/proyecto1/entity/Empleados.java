@@ -1,4 +1,4 @@
-package com.diegocartajena.proyecto1.Model;
+package com.diegocartajena.proyecto1.entity;
 
 import jakarta.persistence.*;
 

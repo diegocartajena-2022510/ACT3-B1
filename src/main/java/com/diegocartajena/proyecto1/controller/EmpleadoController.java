@@ -1,22 +1,21 @@
-package com.diegocartajena.proyecto1.Controller;
+package com.diegocartajena.proyecto1.controller;
 
-import com.diegocartajena.proyecto1.Model.Empleados;
+import com.diegocartajena.proyecto1.entity.Empleados;
 import jakarta.validation.Valid;
-import com.diegocartajena.proyecto1.Service.empleadoService;
+import com.diegocartajena.proyecto1.service.EmpleadoService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/empleados")
 
-public class empleadoController {
-    private final empleadoService empleadoService;
+public class EmpleadoController {
+    private final EmpleadoService empleadoService;
 
-    public empleadoController(empleadoService empleadoService) { this.empleadoService= empleadoService; }
+    public EmpleadoController(EmpleadoService empleadoService) { this.empleadoService= empleadoService; }
 
     @GetMapping
     public List<Empleados> getAllEmpleados() { return empleadoService.getAllEmpleados();}

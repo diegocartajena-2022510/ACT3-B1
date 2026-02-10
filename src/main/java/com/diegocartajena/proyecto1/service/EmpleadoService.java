@@ -1,12 +1,12 @@
-package com.diegocartajena.proyecto1.Service;
+package com.diegocartajena.proyecto1.service;
 
-import com.diegocartajena.proyecto1.Model.Empleados;
+import com.diegocartajena.proyecto1.entity.Empleados;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public interface empleadoService {
+public interface EmpleadoService {
 
     List<Empleados> getAllEmpleados();
     Empleados getEmpleadoById(Integer id);

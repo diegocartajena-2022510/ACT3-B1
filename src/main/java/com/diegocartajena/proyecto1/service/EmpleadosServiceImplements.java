@@ -1,17 +1,17 @@
-package com.diegocartajena.proyecto1.Service;
+package com.diegocartajena.proyecto1.service;
 
 
-import com.diegocartajena.proyecto1.Model.Empleados;
-import com.diegocartajena.proyecto1.Repository.empleadoRepository;
+import com.diegocartajena.proyecto1.entity.Empleados;
+import com.diegocartajena.proyecto1.repository.EmpleadoRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class EmpleadosServiceImplements implements empleadoService {
-    private final  empleadoRepository  empleadoRepository;
+public class EmpleadosServiceImplements implements EmpleadoService {
+    private final EmpleadoRepository empleadoRepository;
 
-    public EmpleadosServiceImplements(empleadoRepository empleadoRepository) {
+    public EmpleadosServiceImplements(EmpleadoRepository empleadoRepository) {
         this.empleadoRepository=empleadoRepository;
     }
 
